@@ -1,0 +1,92 @@
+body {
+  background-color: white
+}
+
+/*
+Colors used
+
+orange: #ff7e1d
+teal: #00e2cc
+pink: #ff2549
+light gray: #7c7c7c
+Dark gray: #434444
+*/
+
+body {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 16px; /* sets the font size to 16px */
+  line-height: 1.6; /* sets the line-height to 1.6 */
+}
+
+h1 {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+  font-size: 30px; /* Overrides the 16px for a heading 1 with 36px */
+  color: #00e2cc;
+}
+
+h2 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 24px;
+  color: #ff2549;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+div {
+  padding: 10px; /* adds a 10px inner spacing to all sides*/
+  margin: 10px; /* adds a 10px outer spacing to all sides*/
+}
+
+a {
+  color: #ff2549;
+}
+
+a:hover {
+  text-decoration: none; /* No underlining when hovering over a link*/
+}
+
+a:visited {
+  color: #ff7e1d;
+}
+
+a:hover {
+  text-decoration: none; /* No underlining with hovering over a link */
+}
+
+a:active { /* selected link */
+  color: #ff2549;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+button {
+  /* overwrite browser defaults */
+  border: none; /* resets the border */
+  font-family: inherit; /* takes the font from the outer container */
+
+  /* style button */
+  background-color: #ff2549;
+  font-size: 16px;
+  color: white;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #7c7c7c; /* width of the border, type of border, color */
+}
+
+button:hover,
+button:focus {
+  cursor: pointer; /* lets the mouse appear as hand when hovering over the button*/
+  opacity: 0.8; /* reduses the opacity of the button to 80% */
+  text-decoration: none;
+}
+
+.button-secondary {
+  background-color: #434444
+}
