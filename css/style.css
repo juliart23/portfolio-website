@@ -1,7 +1,3 @@
-body {
-  background-color: white
-}
-
 /*
 Colors used
 
@@ -26,14 +22,15 @@ h1 {
 }
 
 h2 {
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 700;
   font-size: 24px;
   color: #ff2549;
 }
 
 h3 {
+  font-family: 'Roboto Slab', serif;
   font-size: 18px;
-  font-weight: bold;
 }
 
 div {
@@ -41,29 +38,45 @@ div {
   margin: 10px; /* adds a 10px outer spacing to all sides*/
 }
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #434444;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #000000;
+}
+
 a {
   color: #ff2549;
 }
 
-a:hover {
-  text-decoration: none; /* No underlining when hovering over a link*/
-}
-
 a:visited {
-  color: #ff7e1d;
-}
-
-a:hover {
-  text-decoration: none; /* No underlining with hovering over a link */
-}
-
-a:active { /* selected link */
   color: #ff2549;
 }
 
 a:hover,
 a:focus {
   text-decoration: none;
+}
+
+a:active { /* selected link */
+  color: #ff2549;
 }
 
 button {
@@ -84,9 +97,5 @@ button:hover,
 button:focus {
   cursor: pointer; /* lets the mouse appear as hand when hovering over the button*/
   opacity: 0.8; /* reduses the opacity of the button to 80% */
+  background-color: rgba(255, 37, 73, 0.8)
   text-decoration: none;
-}
-
-.button-secondary {
-  background-color: #434444
-}
