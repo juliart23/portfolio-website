@@ -1,6 +1,5 @@
 /*
-Colors used
-
+Colors used:
 orange: #ff7e1d
 teal: #00e2cc
 pink: #ff2549
@@ -8,82 +7,54 @@ light gray: #7c7c7c
 Dark gray: #434444
 */
 
+/* GENERAL */
 body {
   font-family: 'Noto Sans', sans-serif;
   font-size: 16px; /* sets the font size to 16px */
   line-height: 1.6; /* sets the line-height to 1.6 */
 }
+.no-bullet {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
 
+/* TYPOGRAPHY */
 h1 {
   font-family: 'Roboto Slab', serif;
   font-weight: 700;
   font-size: 30px; /* Overrides the 16px for a heading 1 with 36px */
   color: #00e2cc;
 }
-
 h2 {
   font-family: 'Noto Sans', sans-serif;
   font-weight: 700;
   font-size: 24px;
   color: #ff2549;
 }
-
 h3 {
   font-family: 'Roboto Slab', serif;
   font-size: 18px;
 }
-
-div {
-  padding: 10px; /* adds a 10px inner spacing to all sides*/
-  margin: 10px; /* adds a 10px outer spacing to all sides*/
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #434444;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover {
-  background-color: #000000;
-}
-
 a {
   color: #ff2549;
 }
-
 a:visited {
   color: #ff2549;
 }
-
 a:hover,
 a:focus {
   text-decoration: none;
 }
-
 a:active { /* selected link */
   color: #ff2549;
 }
 
+/* BUTTONS */
 button {
   /* overwrite browser defaults */
   border: none; /* resets the border */
   font-family: inherit; /* takes the font from the outer container */
-
   /* style button */
   background-color: #ff2549;
   font-size: 16px;
@@ -92,10 +63,29 @@ button {
   border-radius: 3px;
   border-bottom: 2px solid #7c7c7c; /* width of the border, type of border, color */
 }
-
 button:hover,
 button:focus {
   cursor: pointer; /* lets the mouse appear as hand when hovering over the button*/
   opacity: 0.8; /* reduses the opacity of the button to 80% */
   background-color: rgba(255, 37, 73, 0.8)
   text-decoration: none;
+}
+
+/* HEADER & NAV */
+ul {
+  overflow: hidden;
+  background-color: #434444;
+}
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #000000;
+}
