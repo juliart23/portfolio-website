@@ -8,6 +8,14 @@ Dark gray: #434444
 */
 
 /* GENERAL */
+header {
+  background: #434444;
+  height: 70px;
+}
+nav {
+  float: right;
+}
+
 body {
   font-family: 'Noto Sans', sans-serif;
   font-size: 16px; /* sets the font size to 16px */
@@ -24,10 +32,16 @@ body {
 }
 .logo {
   display: inline-block;
-  width: 100%;
-  height: 100%;
+  width: 150px;
 }
-
+.svg {
+  display: inline-block;
+  width: 20px;
+}
+.p {
+  font-size: 16px;
+  line-height: 19px;
+}
 /* TYPOGRAPHY */
 h1 {
   font-family: 'Roboto Slab', serif;
@@ -125,11 +139,6 @@ img {
 
 /* MEDIA */
 @media all and (max-width: 800px) {
-  .logo {
-    /* Make logo smaller by changing it's height */
-    height: 50%;
-    width: 50%;
-  }
   h1 {
     /* Reduce font-size of heading */
     font-size: 24px;
