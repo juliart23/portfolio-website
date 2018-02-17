@@ -33,6 +33,7 @@ h1 {
   font-family: 'Roboto Slab', serif;
   font-weight: 700;
   font-size: 30px; /* Overrides the 16px for a heading 1 with 36px */
+  line-height: 35px;
   text-align: center; /* Centers text */
   color: #00e2cc;
 }
@@ -78,7 +79,7 @@ button:hover,
 button:focus {
   cursor: pointer; /* lets the mouse appear as hand when hovering over the button*/
   opacity: 0.8; /* reduses the opacity of the button to 80% */
-  background-color: rgba(255, 37, 73, 0.8)
+  background-color: rgba(255, 37, 73, 0.8);
   text-decoration: none;
 }
 
@@ -132,6 +133,7 @@ img {
   h1 {
     /* Reduce font-size of heading */
     font-size: 24px;
+    line-height: 28px;
     text-align: center;
   }
   h2 {
