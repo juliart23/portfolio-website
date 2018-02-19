@@ -8,14 +8,6 @@ Dark gray: #434444
 */
 
 /* GENERAL */
-header {
-  background: #434444;
-  height: 70px;
-}
-nav {
-  float: right;
-}
-
 body {
   font-family: 'Noto Sans', sans-serif;
   font-size: 16px; /* sets the font size to 16px */
@@ -30,9 +22,25 @@ body {
 * {
   box-sizing: border-box;
 }
-.logo {
-  display: inline-block;
-  width: 150px;
+
+.site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.site-content {
+  flex: 1;
+}
+.w600 {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.w600 p {
+  margin: 20px 0;
+}
+footer {
+  border-top: 3px solid #434444;
+  padding: 14px 0;
 }
 .svg {
   display: inline-block;
@@ -50,6 +58,7 @@ h1 {
   line-height: 35px;
   text-align: center; /* Centers text */
   color: #00e2cc;
+  padding: 64px 0;
 }
 h2 {
   font-family: 'Noto Sans', sans-serif;
@@ -65,15 +74,10 @@ h3 {
 a {
   color: #ff2549;
 }
-a:visited {
-  color: #ff2549;
-}
+
 a:hover,
 a:focus {
   text-decoration: none;
-}
-a:active { /* selected link */
-  color: #ff2549;
 }
 
 /* BUTTONS */
@@ -98,21 +102,32 @@ button:focus {
 }
 
 /* HEADER & NAV */
-ul {
-  overflow: hidden;
-  background-color: #434444;
+header {
+  background: #434444;
+  height: 70px;
 }
-li {
+.logo {
+  display: inline-block;
+  width: 150px;
+}
+nav {
+  float: right;
+}
+nav ul {
+  overflow: hidden;
+  height: 70px;
+}
+nav li {
   float: left;
 }
-li a {
+nav li a {
   display: block;
-  color: white;
+  color: #fff;
   text-align: center;
-  padding: 14px 16px;
+  padding: 22.5px 16px;
   text-decoration: none;
 }
-li a:hover {
+nav li a:hover {
   background-color: #000000;
 }
 
@@ -138,23 +153,47 @@ img {
 }
 
 /* MEDIA */
-@media all and (max-width: 800px) {
-  h1 {
-    /* Reduce font-size of heading */
-    font-size: 24px;
-    line-height: 28px;
-    text-align: center;
-  }
-  h2 {
-    font-size: 16px;
-    text-align: center;
-  }
+
+@media all and (max-width: 1199px) {
   .columns-container {
     font-size: 0;
   }
   .column-4 {
     /* Modify 4-column to 2-columns */
     width: 49%;
+    margin-right: 1%;
+  }
+}
+
+@media all and (max-width: 991px) {
+  .columns-container {
+    font-size: 0;
+  }
+  .column-4 {
+    /* Modify 4-column to 2-columns */
+    width: 49%;
+    margin-right: 1%;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .columns-container {
+    font-size: 0;
+  }
+  .column-4 {
+    /* Modify 2-column to 1-columns */
+    width: 99%;
+    margin-right: 1%;
+  }
+}
+
+@media all and (max-width: 575px) {
+  .columns-container {
+    font-size: 0;
+  }
+  .column-4 {
+    /* Modify 2-column to 1-columns */
+    width: 99%;
     margin-right: 1%;
   }
 }
