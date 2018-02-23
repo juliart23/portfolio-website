@@ -54,7 +54,7 @@ footer {
 h1 {
   font-family: 'Roboto Slab', serif;
   font-weight: 700;
-  font-size: 30px; /* Overrides the 16px for a heading 1 with 36px */
+  font-size: 30px;
   line-height: 35px;
   text-align: center; /* Centers text */
   color: #00e2cc;
@@ -155,17 +155,25 @@ img {
 /* MEDIA */
 
 @media all and (max-width: 1199px) {
+  .wrapper {
+    margin: 0 auto;
+  }
   .columns-container {
     font-size: 0;
+    margin: 0 auto;
   }
   .column-4 {
     /* Modify 4-column to 2-columns */
-    width: 49%;
+    width: 43%;
     margin-right: 1%;
+    margin-bottom: 5%;
+    text-align: center; /* Centers text */
   }
   h1 {
     font-size: 25px;
     line-height: 30px;
+    max-width: 600px;
+    margin: 0 auto;
   }
   h2 {
     font-size: 16px;
@@ -173,13 +181,23 @@ img {
 }
 
 @media all and (max-width: 767px) {
+  .wrapper {
+    margin: 0 auto;
+  }
   .columns-container {
     font-size: 0;
+    margin: 0 auto;
   }
   .column-4 {
     /* Modify 2-column to 1-columns */
-    width: 99%;
+    width: 94%;
     margin-right: 1%;
+    margin-bottom: 5%;
+    text-align: center; /* Centers text */
+  }
+  h1 {
+    max-width: 500px;
+    margin: 0 auto;
   }
   .logo {
     display: inline-block;
@@ -208,31 +226,37 @@ img {
   }
 }
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 600px) {
+  .wrapper {
+    padding: 0 10px
+  }
   .columns-container {
     font-size: 0;
+    margin: 0 auto;
   }
-  .column-4 {
-    /* Modify 2-column to 1-columns */
-    width: 99%;
-    margin-right: 1%;
-  }
+.column-4 {
+      /* Modify 2-column to 1-columns */
+      width: 94%;
+      margin-right: 1%;
+      margin-bottom: 5%;
+      text-align: center; /* Centers text */
+    }
   .logo {
     display: inline-block;
-    width: 120px;
+    width: 88px;
   }
   header {
     background: #434444;
-    height: 50px;
+    height: 36px;
   }
   nav ul {
     overflow: hidden;
-    height: 50px;
+    height: 36px;
   }
   nav li a {
-    font-size: 13px;
+    font-size: 10px;
     text-align: center;
-    padding: 15px 15px;
+    padding: 10px 10px;
     text-decoration: none;
   }
   .w600 {
