@@ -45,8 +45,8 @@ footer {
 }
 .svg {
   display: block;
-  width: 20px;
-  margin: 0 auto;
+  width: 25px;
+  margin-right: 10px;
 }
 .p {
   font-size: 16px;
@@ -228,13 +228,6 @@ img {
     text-align: center;
     padding: 15px 15px;
     text-decoration: none;
-  }
-  .w600 {
-    max-width: 500px;
-    margin: 0 auto;
-  }
-  .w600 p {
-    margin: 20px 0;
   }
 }
 
