@@ -86,7 +86,7 @@ ul.icons {
   text-align: center;
 }
 ul.icons li {
- display: inline-block;
+  display: inline-block;
 }
 
 /* BUTTONS */
@@ -143,7 +143,7 @@ nav li a:hover {
 
 /* Images */
 img {
-    width: 100%;
+  width: 100%;
 }
 
 /* Layout styling */
@@ -239,11 +239,11 @@ img {
     font-size: 0;
     margin: 0 auto;
   }
-.column-4 {
-      /* Modify 2-column to 1-columns */
-      width: 100%;
-      margin: 0;
-    }
+  .column-4 {
+    /* Modify 2-column to 1-columns */
+    width: 100%;
+    margin: 0;
+  }
   .logo {
     display: inline-block;
     width: 88px;
