@@ -102,13 +102,19 @@ button {
   margin-top: 20px;
   border-radius: 3px;
   border-bottom: 2px solid #7c7c7c; /* width of the border, type of border, color */
+  transition: 0.4s opacity, 0.5s background-color;
 }
+
 button:hover,
 button:focus {
   cursor: pointer; /* lets the mouse appear as hand when hovering over the button*/
   opacity: 0.8; /* reduses the opacity of the button to 80% */
   background-color: rgba(255, 37, 73, 0.8);
   text-decoration: none;
+}
+
+.button:hover {
+  background-color: #ff7e1d;
 }
 
 /* HEADER & NAV */
@@ -139,6 +145,29 @@ nav li a {
 }
 nav li a:hover {
   background-color: #000000;
+}
+@keyframes color-change2 {
+    0% {fill: #fff;}
+    50% {fill:#FF2549;}
+    100% {fill: #FF2549;}
+}
+@keyframes color-change3 {
+    0% {fill: #fff;}
+    50% {fill:#FF7E1D;}
+    100% {fill: #FF7E1D;}
+}
+
+.st2 {
+  animation-duration: 3s;
+  animation-name: color-change2;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+.st0 {
+  animation-duration: 6s;
+  animation-name: color-change3;
+  animation-direction: alternate;
+  animation-timing-function: linear;
 }
 
 /* Images */
