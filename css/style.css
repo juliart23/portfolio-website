@@ -201,6 +201,11 @@ img {
   margin-right: 1%;
   text-align: center; /* Centers text */
 }
+.column-2 {
+  float: left;
+  width: 300px;
+  margin: 10px;
+}
 .column-4:last-child {
   margin-right: 0
 }
