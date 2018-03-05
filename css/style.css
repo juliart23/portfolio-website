@@ -261,15 +261,6 @@ img {
   .logo {
     width: 150px;
   }
-  nav ul {
-    overflow: hidden;
-    height: 50px;
-  }
-  nav li a {
-    text-align: center;
-    padding: 15px 15px;
-    text-decoration: none;
-  }
 }
 
 @media all and (max-width: 600px) {
