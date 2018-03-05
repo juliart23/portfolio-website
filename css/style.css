@@ -48,6 +48,9 @@ footer {
   width: 25px;
   margin-right: 10px;
 }
+.svg:hover {
+    opacity: 0.8; /* reduses the opacity of the button to 80% */
+}
 .p {
   font-size: 16px;
   line-height: 19px;
